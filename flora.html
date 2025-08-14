@@ -12,129 +12,25 @@
       background-color: #f4f9f4;
     }
 
-    /* Estilo do menu */
+    /* Menu */
+    nav {
+      background-color: #ffffff;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
     nav ul {
       list-style: none;
-      margin: 0;
       padding: 0;
-      background-color: #2e7d32;
-      overflow: hidden;
+      margin: 0;
+      display: inline-block;
     }
 
     nav ul li {
-      float: left;
+      display: inline;
+      margin: 0 15px;
     }
 
     nav ul li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 20px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    nav ul li a:hover {
-      background-color: #1b5e20;
-    }
-
-    /* Título e subtítulo */
-    header {
-      padding: 20px;
-    }
-
-    header h2 {
-      margin-bottom: 5px;
-      color: #2e7d32;
-    }
-
-    header h3 {
-      margin-top: 0;
-      color: #555;
-      font-weight: normal;
-    }
-
-    header p {
-      color: #444;
-      line-height: 1.6;
-    }
-
-    /* Estilo das plantas */
-    .planta {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 16px;
-      margin: 20px;
-      max-width: 600px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .planta img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 6px;
-    }
-
-    .planta h2 {
-      margin: 10px 0 5px;
-      color: #2e7d32;
-    }
-
-    .planta h3 {
-      margin: 0 0 10px;
-      font-style: italic;
-      color: #4caf50;
-    }
-
-    .planta p {
-      margin: 0;
-      color: #555;
-    }
-  </style>
-</head>
-<body>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="fauna.html">Fauna</a></li>
-      <li><a href="flora.html">Flora</a></li>
-      <li><a href="questionario.html">Questionário</a></li>
-    </ul>
-  </nav>
-
-  <header>
-    <h2>Manguezais da Barra do Sahy (Aracruz)</h2>
-    <h3>Flora</h3>
-    <p>
-      A flora dos manguezais da Barra do Sahy, como em outros manguezais, é composta principalmente por espécies adaptadas à vida em ambientes salinos, conhecidas como halófitas. 
-      As árvores mais comuns incluem o mangue-vermelho (<i>Rhizophora mangle</i>), o mangue-preto (<i>Avicennia schaueriana</i>) e o mangue-branco (<i>Laguncularia racemosa</i>). 
-      Além dessas árvores, é comum encontrar epífitas como orquídeas, bromélias e samambaias sobre os galhos, além de algas marinhas na região.
-    </p>
-  </header>
-
-  <!-- Plantas -->
-  <div class="planta">
-    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ7KwtDnmfg7p8wV7vPtJdFmIvIb5ayDtJlxJLMpLZulxDAayMrNqKo7h_9HO38EyMAIM5o_NBAWNkiM2O3VgD1g" alt="Mangue-preto">
-    <h2>Mangue-preto</h2>
-    <h3>Avicennia schaueriana</h3>
-    <p>Apresenta raízes aéreas (pneumatóforos) que emergem do solo para facilitar a troca gasosa.</p>
-  </div>
-
-  <div class="planta">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Rhizophora_mangle.jpg" alt="Mangue-vermelho">
-    <h2>Mangue-vermelho</h2>
-    <h3>Rhizophora mangle</h3>
-    <p>Reconhecido por suas raízes-escora que auxiliam na respiração e fixação em solos instáveis, além de mecanismos para eliminação de sais.</p>
-  </div>
-
-  <div class="planta">
-    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXY5-L66Ll8CTLVrii---iTb5BzVkW_z0GVzTBXs3Fi07moPsYwfG6PFSAXlGDO60Qm7ByKsx3QVnpPXS1BZZqJg" alt="Mangue-branco">
-    <h2>Mangue-branco</h2>
-    <h3>Laguncularia racemosa</h3>
-    <p>Uma das espécies mais comuns em manguezais, adaptada à salinidade do ambiente.</p>
-  </div>
-
-</body>
-</html>
+      text-decoration: none
