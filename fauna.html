@@ -1,65 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Manguezais da Barra do Sahy - Fauna</title>
+  <title>Catálogo de Fauna - Manguezais da Barra do Sahy</title>
   <style>
     /* Reset básico */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0 20px 40px 20px;
+      padding: 0;
       background-color: #f9f9f9;
       color: #333;
     }
 
-    /* Menu */
+    /* Menu de navegação preto centralizado */
     ul {
-      list-style-type: none;
+      padding: 0;
       margin: 0;
-      padding: 10px 0;
-      background-color: #333;
+      background-color: #000;
       display: flex;
       justify-content: center;
-      gap: 20px;
-    }
-
-    ul li {
-      display: inline;
+      width: 100%;
     }
 
     ul li a {
-      text-decoration: none;
+      display: block;
       color: white;
-      padding: 8px 15px;
-      display: inline-block;
+      text-decoration: none;
+      padding: 14px 20px;
     }
 
     ul li a:hover {
-      background-color: #555;
-      border-radius: 5px;
+      background-color: #111;
     }
 
-    /* Títulos */
+    /* Títulos centralizados */
     h2 {
+      text-align: center;
       margin-top: 20px;
       margin-bottom: 5px;
     }
 
     h3 {
+      text-align: center;
       margin-top: 0;
       color: #555;
-      font-weight: normal;
       margin-bottom: 20px;
+    }
+
+    /* Parágrafo principal */
+    p {
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+      color: #555;
+      text-align: justify;
     }
 
     /* Estilo das divs dos animais */
     .animal {
-      background-color: white;
+      background-color: #fff;
       border: 1px solid #ccc;
       padding: 15px;
-      margin: 10px 0;
-      max-width: 500px;
+      margin: 20px auto;
+      max-width: 600px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       border-radius: 5px;
     }
@@ -68,30 +71,34 @@
       max-width: 100%;
       height: auto;
       display: block;
-      margin-bottom: 10px;
+      margin: 0 auto 10px auto;
       border-radius: 4px;
     }
 
     .nome-comum {
       font-weight: bold;
-      font-size: 1.3em;
-      margin-bottom: 3px;
+      font-size: 1.2em;
+      text-align: center;
+      margin-bottom: 5px;
     }
 
     .nome-cientifico {
       font-style: italic;
       color: #555;
+      text-align: center;
       margin-bottom: 10px;
     }
 
     .descricao {
       font-size: 1em;
       color: #444;
+      text-align: justify;
     }
   </style>
 </head>
 <body>
 
+  <!-- Menu de navegação -->
   <ul>
     <li><a href="index.html">Início</a></li>
     <li><a href="fauna.html">Fauna</a></li>
@@ -99,14 +106,58 @@
     <li><a href="questionario.html">Questionário</a></li>
   </ul>
 
+  <!-- Conteúdo principal -->
   <h2>Manguezais da Barra do Sahy (Aracruz)</h2>
   <h3>Fauna</h3>
-
   <p>
-    A fauna dos manguezais da Barra do Sahy, em Aracruz, é rica e diversificada...
+    A fauna dos manguezais da Barra do Sahy é rica e diversificada, incluindo moluscos, crustáceos (como caranguejos e camarões), peixes, aves (como garças, gaivotas, beija-flores) e até jacarés em algumas áreas. Os manguezais atuam como berçário e abrigo para muitas espécies, além de fornecer alimento e contribuir para o equilíbrio ambiental.
   </p>
 
-  <!-- blocos -->
-  
+  <!-- Animais -->
+  <div class="animal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Beija-flor.jpg" alt="Beija-Flor">
+    <div class="nome-comum">Beija-Flor</div>
+    <div class="nome-cientifico">Trochilidae</div>
+    <div class="descricao">
+      Os beija-flores são aves pequenas, encontradas desde o sul do Alasca até a Patagônia. Possuem voo ágil e alimentação baseada em néctar.
+    </div>
+  </div>
+
+  <div class="animal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Larus_ridibundus.jpg" alt="Gaivota">
+    <div class="nome-comum">Gaivota</div>
+    <div class="nome-cientifico">Larinae</div>
+    <div class="descricao">
+      As gaivotas são aves marinhas próximas do gênero Larus. Frequentam rios, praias e manguezais, alimentando-se de peixes e pequenos invertebrados.
+    </div>
+  </div>
+
+  <div class="animal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Gar%C3%A7a.jpg" alt="Garça">
+    <div class="nome-comum">Garça</div>
+    <div class="nome-cientifico">Ardeidae</div>
+    <div class="descricao">
+      Vivem em bandos, frequentam manguezais e se alimentam de peixes, anfíbios e pequenos invertebrados aquáticos.
+    </div>
+  </div>
+
+  <div class="animal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Centropomus_undecimalis.jpg" alt="Robalo-branco">
+    <div class="nome-comum">Robalo-branco</div>
+    <div class="nome-cientifico">Centropomus undecimalis</div>
+    <div class="descricao">
+      Peixe comum nos manguezais, atingindo 1,2 metros de comprimento. Sua reprodução inclui 1,5 a 2 milhões de ovos por temporada.
+    </div>
+  </div>
+
+  <div class="animal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Alligator_mississippiensis.jpg" alt="Jacaré">
+    <div class="nome-comum">Jacaré</div>
+    <div class="nome-cientifico">Alligatoridae</div>
+    <div class="descricao">
+      Predador de manguezais, alimenta-se de peixes, aves e pequenos mamíferos. Contribui para o equilíbrio do ecossistema.
+    </div>
+  </div>
+
 </body>
 </html>
