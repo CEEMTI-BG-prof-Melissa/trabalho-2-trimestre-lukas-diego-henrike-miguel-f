@@ -1,1 +1,73 @@
+/* Reset básico */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px 40px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Menu de navegação */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #000; /* menu preto */
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu li a {
+  display: block;
+  padding: 14px 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+  background-color: #333; /* efeito hover mais claro */
+}
+
+/* Header e título */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 2em;
+  color: #222;
+}
+
+/* Parágrafo principal */
+p {
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+/* Imagens */
+.imagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.imagens img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
 
