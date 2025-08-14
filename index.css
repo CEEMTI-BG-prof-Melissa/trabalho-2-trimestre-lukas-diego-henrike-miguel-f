@@ -1,6 +1,6 @@
 /* Reset básico */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   margin: 0;
   padding: 0 20px;
   background-color: #fafafa;
@@ -51,7 +51,7 @@ p {
 
 /* Estilo de imagens */
 div {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   margin-bottom: 20px;
   border-radius: 8px;
