@@ -1,36 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Catálogo de Flora - Manguezais da Barra do Sahy</title>
+  <title>Manguezais da Barra do Sahy - Flora</title>
   <style>
-    /* Reset básico */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f9f4;
+      padding: 0 20px 40px 20px;
+      background-color: #f9f9f9;
+      color: #333;
     }
 
     /* Menu */
-    nav {
-      background-color: #ffffff;
+    ul {
+      list-style-type: none;
+      margin: 0;
       padding: 10px 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
     }
 
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    ul li {
+      display: inline;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 15px;
       display: inline-block;
     }
 
-    nav ul li {
-      display: inline;
-      margin: 0 15px;
+    ul li a:hover {
+      background-color: #555;
+      border-radius: 5px;
     }
 
-    nav ul li a {
-      text-decoration: none
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #555;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    .planta {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px 0;
+      max-width: 500px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+
+    .planta img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+
+    .nome-comum {
+      font-weight: bold;
+      font-size: 1.3em;
+      margin-bottom: 3px;
+    }
+
+    .nome-cientifico {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .descricao {
+      font-size: 1em;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="fauna.html">Fauna</a></li>
+    <li><a href="flora.html">Flora</a></li>
+    <li><a href="questionario.html">Questionário</a></li>
+  </ul>
+
+  <h2>Manguezais da Barra do Sahy (Aracruz)</h2>
+  <h3>Flora</h3>
+
+  <p>
+    A flora dos manguezais da Barra do Sahy é formada por espécies adaptadas ao ambiente salino...
+  </p>
+
+  <div class="planta">
+    <img src="imagem-flora1.jpg" alt="Nome popular da planta">
+    <div class="nome-comum">Nome Popular</div>
+    <div class="nome-cientifico">Nome científico</div>
+    <div class="descricao">Descrição da planta e suas características.</div>
+  </div>
+
+</body>
+</html>
