@@ -4,40 +4,43 @@
   <meta charset="UTF-8" />
   <title>Questionário sobre Cultura Oceânica</title>
   <style>
+    /* Reset básico */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0 20px;
+      padding: 0 20px 40px 20px;
       background-color: #fafafa;
       color: #333;
     }
 
-    /* Menu centralizado */
+    /* Menu */
     ul {
-      list-style: none;
-      padding: 0;
+      list-style-type: none;
       margin: 0;
-      background-color: #333;
+      padding: 10px 0;
+      background-color: #333; /* fundo preto sólido */
       display: flex;
       justify-content: center;
+      gap: 20px;
     }
-    ul li {
-      margin: 0;
-    }
+
     ul li a {
-      display: block;
-      color: white;
       text-decoration: none;
-      padding: 14px 20px;
+      color: white; /* links brancos */
+      padding: 8px 15px;
+      display: inline-block;
     }
+
     ul li a:hover {
-      background-color: #111;
+      background-color: #111; /* hover mais escuro */
+      border-radius: 5px;
     }
 
     /* Título e parágrafo */
     h2 {
       margin-top: 20px;
       color: #222;
+      text-align: center;
     }
     p {
       margin-top: 0;
@@ -45,12 +48,19 @@
       line-height: 1.6;
       color: #555;
       max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: justify;
     }
 
     /* Formulário */
     form {
       max-width: 700px;
-      margin-top: 20px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     label {
       display: block;
@@ -84,76 +94,4 @@
       cursor: pointer;
     }
     button:hover {
-      background-color: #555;
-    }
-  </style>
-</head>
-<body>
-
-  <ul>
-    <li><a href="index.html">Início</a></li>
-    <li><a href="fauna.html">Fauna</a></li>
-    <li><a href="flora.html">Flora</a></li>
-    <li><a href="questionario.html">Questionário</a></li>
-  </ul>
-
-  <h2>Questionário sobre Cultura Oceânica</h2>
-  <p>Este questionário tem como objetivo compreender o nível de conhecimento e envolvimento da população brasileira com a Cultura Oceânica. Sua participação é voluntária e as respostas serão usadas apenas para fins educativos e de pesquisa.</p>
-
-  <form action="#" method="post">
-    <label for="name">Nome completo *</label>
-    <input type="text" id="name" name="name" maxlength="100" required>
-
-    <label for="email">E-mail *</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="idade">Idade *</label>
-    <input type="number" id="idade" name="idade" min="5" max="125" required>
-
-    <label for="data">Data de nascimento *</label>
-    <input type="date" id="data" name="data" min="1901-02-02" max="2025-11-30" required>
-
-    <label for="estado">Estado onde reside *</label>
-    <select id="estado" name="estado" required>
-      <option value="">Selecione um estado</option>
-      <option value="AC">Acre</option>
-      <option value="AL">Alagoas</option>
-      <option value="AP">Amapá</option>
-      <option value="AM">Amazonas</option>
-      <option value="BA">Bahia</option>
-      <option value="CE">Ceará</option>
-      <option value="DF">Distrito Federal</option>
-      <option value="ES">Espírito Santo</option>
-      <option value="GO">Goiás</option>
-      <option value="MA">Maranhão</option>
-      <option value="MT">Mato Grosso</option>
-      <option value="MS">Mato Grosso do Sul</option>
-      <option value="MG">Minas Gerais</option>
-      <option value="PA">Pará</option>
-      <option value="PB">Paraíba</option>
-      <option value="PR">Paraná</option>
-      <option value="PE">Pernambuco</option>
-      <option value="PI">Piauí</option>
-      <option value="RJ">Rio de Janeiro</option>
-      <option value="RN">Rio Grande do Norte</option>
-      <option value="RS">Rio Grande do Sul</option>
-      <option value="RO">Rondônia</option>
-      <option value="RR">Roraima</option>
-      <option value="SC">Santa Catarina</option>
-      <option value="SP">São Paulo</option>
-      <option value="SE">Sergipe</option>
-      <option value="TO">Tocantins</option>
-    </select>
-
-    <label>Você já ouviu falar sobre Cultura Oceânica? *</label>
-    <input type="radio" id="sim" name="cultura_oceanica" value="Sim" required>
-    <label for="sim">Sim</label>
-    <input type="radio" id="nao" name="cultura_oceanica" value="Não" required>
-    <label for="nao">Não</label>
-
-    <label for="mensagem">Mensagem pessoal *</label>
-    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-    <label><input type="checkbox" name="acoes" value="reutilizei_plasticos"> Reutilizei plásticos e embalagens para reduzir o lixo</label>
-    <label><input type="checkbox" name="acoes" value="evitei_descartar_lixo"> Evitei descartar lixo em praias, rios ou mares</label>
-    <label><input type="checkbox" name="acoes" value="usei_sacolas_
+      background-color: #5
