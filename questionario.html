@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>Questionário sobre Cultura Oceânica</title>
   <style>
-    /* Reset básico */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -13,16 +12,17 @@
       color: #333;
     }
 
-    /* Menu simples */
+    /* Menu centralizado */
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
       background-color: #333;
-      overflow: hidden;
+      display: flex;
+      justify-content: center;
     }
     ul li {
-      float: left;
+      margin: 0;
     }
     ul li a {
       display: block;
@@ -156,20 +156,4 @@
 
     <label><input type="checkbox" name="acoes" value="reutilizei_plasticos"> Reutilizei plásticos e embalagens para reduzir o lixo</label>
     <label><input type="checkbox" name="acoes" value="evitei_descartar_lixo"> Evitei descartar lixo em praias, rios ou mares</label>
-    <label><input type="checkbox" name="acoes" value="usei_sacolas_reutilizaveis"> Usei sacolas reutilizáveis ao fazer compras</label>
-    <label><input type="checkbox" name="acoes" value="participei_campanhas"> Participei de campanhas de conscientização sobre a vida marinha</label>
-    <label><input type="checkbox" name="acoes" value="optei_transporte_menos_pol"> Optei por meios de transporte menos poluentes</label>
-    <label><input type="checkbox" name="acoes" value="economizei_agua"> Economizei água no dia a dia</label>
-    <label><input type="checkbox" name="acoes" value="compartilhei_info_protecao"> Compartilhei informações sobre a proteção dos oceanos nas redes sociais</label>
-    <label><input type="checkbox" name="acoes" value="denunciei_praticas_prejudiciais"> Denunciei ou evitei práticas prejudiciais ao meio ambiente marinho</label>
-    <label><input type="checkbox" name="acoes" value="apoiei_projetos_ong"> Apoiei projetos ou ONGs ligadas à conservação marinha</label>
-
-    <label for="sugestao">Sugestão de iniciativa oceânica (opcional)</label>
-    <textarea id="sugestao" name="sugestao" rows="5"></textarea>
-
-    <button type="submit">Enviar</button>
-    <button type="reset">Limpar</button>
-  </form>
-
-</body>
-</html>
+    <label><input type="checkbox" name="acoes" value="usei_sacolas_
