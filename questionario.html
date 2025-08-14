@@ -2,7 +2,6 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Menu de Navegação Horizontal</title>
   <style>
     /* Reset básico */
@@ -13,33 +12,7 @@
     }
 
     /* Estilo do menu */
-    nav {
-      background-color: #333; /* cor de fundo */
-    }
-
-    nav ul {
-      list-style: none; /* remove os marcadores */
-      margin: 0;
-      padding: 0;
-      display: flex; /* deixa os itens na horizontal */
-    }
-
-    nav ul li {
-      margin: 0;
-    }
-
-    nav ul li a {
-      display: block;
-      padding: 15px 20px;
-      color: white;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-
-    nav ul li a:hover {
-      background-color: #555; /* muda cor ao passar o mouse */
-    }
-
+ 
     /* Pequeno espaçamento para o formulário */
     form {
       margin: 20px;
@@ -56,14 +29,12 @@
   </style>
 </head>
 <body>
-  <nav>
     <ul>
       <li><a href="index.html">Início</a></li>
       <li><a href="fauna.html">Fauna</a></li>
       <li><a href="flora.html">Flora</a></li>
       <li><a href="questionario.html">Questionário</a></li>
     </ul>
-  </nav>
     <h2> Questionário sobre Cultura Oceânica </h2>
     <p> Este questionário tem como objetivo compreender o nível de conhecimento e envolvimento da população brasileira com a Cultura Oceânica — um conceito que busca promover a conscientização sobre a importância dos oceanos para a vida no planeta e incentivar atitudes sustentáveis em relação ao ambiente marinho. As informações coletadas servirão para embasar ações educativas, campanhas de conscientização e projetos voltados à preservação dos oceanos. Sua participação é voluntária, e as respostas serão utilizadas apenas para fins educativos e de pesquisa. Contamos com sua sinceridade para que os dados reflitam com precisão a percepção e o comportamento da sociedade em relação aos mares e à vida marinha.</p>
   <form action="#" method="post">
@@ -127,7 +98,6 @@
       <label for="mensagem">Mensagem pessoal:</label><br>
       <textarea id="mensagem" name="mensagem" rows="5" cols="50"></textarea><br><br>
 
-      <fieldset>
         <legend>Quais dessas ações você já praticou?</legend>
 
         <label>
@@ -174,7 +144,7 @@
           <input type="checkbox" name="acoes" value="apoiei_projetos_ong">
           Apoiei projetos ou ONGs ligadas à conservação marinha
         </label>
-      </fieldset><br>
+      <br>
 
       <label for="sugestao">Se desejar, envie uma sugestão de iniciativa oceânica:</label><br>
       <textarea id="sugestao" name="sugestao" rows="5" cols="50"></textarea><br><br>
