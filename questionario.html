@@ -2,74 +2,64 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Questionário</title>
 <style>
 body {
-    background-color: #000;
-    color: #fff;
     font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
     margin: 0;
     padding: 0;
 }
-ul {
-    background-color: #000;
+
+.menu {
+    background-color: #222;
     padding: 10px;
-    margin: 0;
-    list-style: none;
     text-align: center;
 }
-ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-ul li a {
+
+.menu a {
     color: white;
     text-decoration: none;
+    margin: 0 15px;
 }
-form {
-    margin: 20px;
+
+.menu a:hover {
+    text-decoration: underline;
 }
+
 h2 {
-    color: #fff;
-    margin-bottom: 10px;
+    margin-top: 20px;
 }
-button {
-    background-color: white;
-    color: black;
-    padding: 8px 15px;
-    border: none;
-    cursor: pointer;
-}
-button:hover {
-    background-color: gray;
+
+.container {
+    padding: 20px;
 }
 </style>
 </head>
 <body>
 
-<ul>
-    <li><a href="index.html">Início</a></li>
-    <li><a href="fauna.html">Fauna</a></li>
-    <li><a href="flora.html">Flora</a></li>
-    <li><a href="questionario.html">Questionário</a></li>
-</ul>
+<div class="menu">
+    <a href="#">Início</a>
+    <a href="#">Fauna</a>
+    <a href="#">Flora</a>
+    <a href="#">Questionário</a>
+</div>
 
-<form>
+<div class="container">
     <h2>Início</h2>
-    <label><input type="radio" name="inicio" value="op1"> Opção 1</label><br>
-    <label><input type="radio" name="inicio" value="op2"> Opção 2</label><br><br>
+    <label><input type="radio" name="opcao"> Opção 1</label><br>
+    <label><input type="radio" name="opcao"> Opção 2</label>
 
     <h2>Flora</h2>
-    <label><input type="checkbox" name="flora" value="planta1"> Planta 1</label><br>
-    <label><input type="checkbox" name="flora" value="planta2"> Planta 2</label><br><br>
+    <label><input type="checkbox"> Planta 1</label><br>
+    <label><input type="checkbox"> Planta 2</label>
 
     <h2>Fauna</h2>
-    <label><input type="checkbox" name="fauna" value="animal1"> Animal 1</label><br>
-    <label><input type="checkbox" name="fauna" value="animal2"> Animal 2</label><br><br>
-
-    <button type="submit">Enviar</button>
-</form>
+    <label><input type="checkbox"> Animal 1</label><br>
+    <label><input type="checkbox"> Animal 2</label>
+</div>
 
 </body>
 </html>
-
