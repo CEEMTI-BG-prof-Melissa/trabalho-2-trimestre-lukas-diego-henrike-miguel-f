@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>Catálogo de Fauna - Manguezais da Barra do Sahy</title>
   <style>
-    /* Reset básico */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -13,14 +12,13 @@
       color: #333;
     }
 
-    /* Menu centralizado sem pontos */
     ul {
-      list-style: none; /* remove os pontos */
+      list-style: none;
       margin: 0;
       padding: 0;
-      background-color: #000; /* fundo preto */
+      background-color: #000;
       display: flex;
-      justify-content: center; /* centraliza os itens */
+      justify-content: center;
     }
 
     ul li {
@@ -35,10 +33,9 @@
     }
 
     ul li a:hover {
-      background-color: #333; /* efeito hover */
+      background-color: #333;
     }
 
-    /* Título e subtítulo */
     header {
       padding: 20px;
       text-align: center;
@@ -54,13 +51,12 @@
       font-weight: normal;
     }
 
-    /* Estilo dos animais */
     .animal {
       background-color: #fff;
       border: 1px solid #ccc;
       border-radius: 8px;
       padding: 16px;
-      margin: 20px auto; /* centraliza horizontalmente */
+      margin: 20px auto;
       max-width: 600px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
@@ -90,7 +86,6 @@
 </head>
 <body>
 
-  <!-- Menu de navegação -->
   <ul>
     <li><a href="index.html">Início</a></li>
     <li><a href="fauna.html">Fauna</a></li>
@@ -98,7 +93,6 @@
     <li><a href="questionario.html">Questionário</a></li>
   </ul>
 
-  <!-- Conteúdo principal -->
   <header>
     <h2>Manguezais da Barra do Sahy (Aracruz)</h2>
     <h3>Fauna</h3>
@@ -107,35 +101,84 @@
     </p>
   </header>
 
-  <!-- Animais -->
-<div class="animal">
-     <img width="350px" src="https://cdn.pixabay.com/photo/2016/04/06/16/51/hummingbird-1317080_960_720.jpg"/>
-    <div class="nome-comum">Nome comum: Beija-Flor </div>
-    <div class="nome-cientifico"> Nome científico: Trochilidae </div>
-    <div class="comprimento"> Comprimento: 10 cm </div>
-    <div class="velocidade"> Velocidade: 98 km/h </div>
-    <div class="numero-de-ovos"> Número de Ovos: </div>
-    <div class="peso"> Peso:  Calypte anna: 4 – 4,5 g </div>
+  <!-- Beija-Flor -->
+  <div class="animal">
+    <img width="350px" src="https://cdn.pixabay.com/photo/2016/04/06/16/51/hummingbird-1317080_960_720.jpg"/>
+    <div class="nome-comum">Nome comum: Beija-Flor</div>
+    <div class="nome-cientifico">Nome científico: Trochilidae</div>
+    <div class="comprimento">Comprimento: 10 cm</div>
+    <div class="velocidade">Velocidade: 98 km/h</div>
+    <div class="numero-de-ovos">Número de Ovos: 2 – 3 por ninho</div>
+    <div class="peso">Peso: 4 – 4,5 g</div>
     <div class="descricao">
-        Os beija-flores, também denominados colibris, são termos comuns que se referem à qualquer uma de 362 espécies classificadas dentro de 113 gêneros reconhecidos, e se encontrando distribuídos desde o sul do Alasca ao extremo sul da Patagônia, no arquipélago da Terra do Fogo.
-      
+      Os beija-flores, também denominados colibris, são termos comuns que se referem a qualquer uma das 362 espécies classificadas dentro de 113 gêneros reconhecidos, distribuídos do sul do Alasca ao extremo sul da Patagônia.
     </div>
   </div>
 
-<div class="animal">
+  <!-- Gaivota -->
+  <div class="animal">
     <img width="350px" src="https://cdn.pixabay.com/photo/2017/08/30/01/10/seagull-2692250_960_720.jpg"/>
     <div class="nome-comum">Nome comum: Gaivota</div>
-    <div class="nome-cientifico"> Nome científico: Larinae </div>
-    <div class="comprimento"> Comprimento:  Alcatraz-comum: 64 – 79 cm, Gaivota-pequena: 25 – 30 cm </div>
-    <div class="largura-das-asas"> Largura das Asas:  Alcatraz-comum: 1,5 – 1,7 m, Gaivota-pequena: 61 – 78 cm </div>
-    <div class="numero-de-ovos"> Número de Ovos:  Alcatraz-comum: 1 – 3, Gaivota-pequena: 2 – 6, Gaivota-do-rabo-de-andorinha: 1 </div>
-    <div class="peso"> Peso:  Alcatraz-comum: 1,8 kg, Gaivota-pequena: 68 – 160 g </div>
+    <div class="nome-cientifico">Nome científico: Larinae</div>
+    <div class="comprimento">Comprimento: Alcatraz-comum: 64–79 cm, Gaivota-pequena: 25–30 cm</div>
+    <div class="largura-das-asas">Largura das Asas: Alcatraz-comum: 1,5–1,7 m, Gaivota-pequena: 61–78 cm</div>
+    <div class="numero-de-ovos">Número de Ovos: Alcatraz-comum: 1–3, Gaivota-pequena: 2–6, Gaivota-do-rabo-de-andorinha: 1</div>
+    <div class="peso">Peso: Alcatraz-comum: 1,8 kg, Gaivota-pequena: 68–160 g</div>
     <div class="descricao">
-        As gaivotas são aves marinhas da família dos Larídeos e sub-ordem Lari. A maior parte das gaivotas pertence ao grande género Larus. São próximas das gaivinas e estão mais distantes das limícolas, airos e rabos-de-palha.
-      
+      As gaivotas são aves marinhas da família dos Larídeos e sub-ordem Lari. A maior parte das gaivotas pertence ao gênero Larus.
     </div>
   </div>
 
-  
+  <!-- Garça -->
   <div class="animal">
-    <img width="350px" src="https://cdn.pixabay.com/photo/2014/04/03/11/
+    <img width="350px" src="https://cdn.pixabay.com/photo/2014/04/03/11/50/egret-312385_960_720.jpg"/>
+    <div class="nome-comum">Nome comum: Garça</div>
+    <div class="nome-cientifico">Nome científico: Ardeidae</div>
+    <div class="comprimento">Comprimento: 84–100 cm</div>
+    <div class="largura-das-asas">Largura das Asas: 1,6–2 m</div>
+    <div class="numero-de-ovos">Número de Ovos: Garça-gigante: 2–5, Garça-pequena: 4–8</div>
+    <div class="peso">Peso: 1–2,1 kg</div>
+    <div class="descricao">
+      Ardeidae é a família de aves pelecaniformes que inclui os socós e as garças. Vivem em bandos e se alimentam de peixes, sapos e outros animais aquáticos.
+    </div>
+  </div>
+
+  <!-- Robalo-branco -->
+  <div class="animal">
+    <img width="350px" src="https://cdn.pixabay.com/photo/2018/03/30/19/13/fish-3279081_960_720.jpg"/>
+    <div class="nome-comum">Nome comum: Robalo-branco</div>
+    <div class="nome-cientifico">Nome científico: Centropomus undecimalis</div>
+    <div class="comprimento">Comprimento: 1,2 m</div>
+    <div class="numero-de-ovos">Número de Ovos: 1,5–2 milhões por temporada de desova</div>
+    <div class="descricao">
+      O Robalo-branco é um peixe encontrado em manguezais e áreas costeiras. Alimenta-se de peixes menores e crustáceos.
+    </div>
+  </div>
+
+  <!-- Jacaré -->
+  <div class="animal">
+    <img width="350px" src="https://cdn.pixabay.com/photo/2016/11/29/04/16/alligator-1867345_960_720.jpg"/>
+    <div class="nome-comum">Nome comum: Jacaré</div>
+    <div class="nome-cientifico">Nome científico: Alligatoridae</div>
+    <div class="comprimento">Comprimento: até 4 m</div>
+    <div class="numero-de-ovos">Número de Ovos: 20–50 por ninhada</div>
+    <div class="peso">Peso: até 450 kg</div>
+    <div class="descricao">
+      Os jacarés são répteis encontrados em rios, lagoas e manguezais. Alimentam-se de peixes, aves e pequenos mamíferos.
+    </div>
+  </div>
+
+  <!-- Ostra-do-Pacífico -->
+  <div class="animal">
+    <img width="350px" src="https://cdn.pixabay.com/photo/2016/04/01/10/21/oyster-1300675_960_720.jpg"/>
+    <div class="nome-comum">Nome comum: Ostra-do-Pacífico</div>
+    <div class="nome-cientifico">Nome científico: Magallana gigas</div>
+    <div class="comprimento">Comprimento: 8–15 cm</div>
+    <div class="peso">Peso: 80–300 g</div>
+    <div class="descricao">
+      Cada fêmea pode liberar até 50 milhões de ovos por temporada reprodutiva. Pertence à classe Bivalvia, que inclui mexilhões, vieiras e outras ostras.
+    </div>
+  </div>
+
+</body>
+</html>
