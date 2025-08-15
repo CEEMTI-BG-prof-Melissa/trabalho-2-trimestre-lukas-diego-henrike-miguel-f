@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Início - Manguezais da Barra do Sahy</title>
 <style>
@@ -9,14 +9,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
- 
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Menu de navegação */
+/* Menu de navegação preto igual Flora e Fauna */
 ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     background-color: #000;
     display: flex;
     justify-content: center;
@@ -30,62 +31,46 @@ ul li a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 14px 25px;
-    transition: 0.3s;
+    padding: 14px 20px;
 }
 
 ul li a:hover {
-    background-color: #1abc9c;
+    background-color: #111;
 }
 
 /* Cabeçalho */
 header {
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px;
 }
 
 header h2 {
-    margin: 0;
-    color: #1abc9c;
-    font-size: 2.2em;
+    margin: 0 0 5px 0;
 }
 
 header h3 {
-    margin: 10px 0 20px 0;
+    margin: 0 0 20px 0;
     color: #555;
     font-weight: normal;
 }
 
-/* Cards de conteúdo */
+/* Card principal */
 .card {
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 20px;
     margin: 20px auto;
     max-width: 700px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Imagens centralizadas */
 .card img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-/* Texto do card */
-.card p {
-    color: #555;
-    line-height: 1.6em;
-}
-
-/* Responsividade */
-@media(max-width: 600px){
-    header h2 {
-        font-size: 1.8em;
-    }
+    display: block;
+    margin: 15px auto;
 }
 </style>
 </head>
@@ -101,19 +86,17 @@ header h3 {
 
 <!-- Cabeçalho -->
 <header>
-    <h2>Manguezais da Barra do Sahy</h2>
-    <h3>Bem-vindo(a) ao nosso site</h3>
+    <h2>Manguezais da Barra do Sahy (Aracruz)</h2>
+    <h3>Bem-vindo ao nosso site</h3>
 </header>
 
-<!-- Cards de conteúdo -->
+<!-- Conteúdo principal -->
 <div class="card">
+    <p>
+        A Praia da Barra do Sahy, localizada em Aracruz no Litoral Norte do Espírito Santo, é conhecida por sua beleza natural e biodiversidade. Os manguezais da região são ecossistemas essenciais, oferecendo abrigo e alimento para diversas espécies de fauna e flora. Este site apresenta informações detalhadas sobre a fauna, flora e curiosidades sobre os manguezais da Barra do Sahy, além de um questionário interativo para testar seus conhecimentos.
+    </p>
     <img src="https://midias.agazeta.com.br/2022/01/19/o-deu-praia-te-leva-ate-a-praia-barra-do-sahy-em-aracruz-no-litoral-norte-do-espirito-santo-685071-article.jpg" alt="Praia Barra do Sahy">
-    <p>Sahy, em tupi, significa "olhos miúdos" ou "água dos olhos". A Praia da Barra do Sahy, localizada em Aracruz, Espírito Santo, é um local perfeito para relaxar, com águas mansas, areia de textura única e rica biodiversidade.</p>
-</div>
-
-<div class="card">
     <img src="https://folhaaracruz.com.br/wp-content/uploads/sites/21/2023/10/Barra-do-Sahy-em-aracruz-no-folha-aracruz-cnes.jpeg" alt="Vista da Praia Barra do Sahy">
-    <p>Localizada no coração de uma vila de pescadores, a praia é ideal para lazer e observação da fauna e flora locais. É um destino que combina tranquilidade e contato com a natureza.</p>
 </div>
 
 </body>
