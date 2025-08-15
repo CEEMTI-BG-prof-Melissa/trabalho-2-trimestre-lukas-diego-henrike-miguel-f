@@ -3,38 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Questionário</title>
+<title>Questionário - Manguezais da Barra do Sahy</title>
 <style>
 body {
     font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: white;
+    background-color: #121212;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 
 .menu {
-    background-color: #222;
-    padding: 10px;
+    background-color: #1e1e1e;
+    padding: 15px 0;
     text-align: center;
 }
 
 .menu a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .menu a:hover {
-    text-decoration: underline;
-}
-
-h2 {
-    margin-top: 20px;
+    color: #1abc9c;
 }
 
 .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #1abc9c;
+}
+
+.section {
+    background-color: #1f1f1f;
     padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+label {
+    display: block;
+    background-color: #2c2c2c;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+label:hover {
+    background-color: #333;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #1abc9c;
+}
+
+@media (max-width: 600px) {
+    .menu a {
+        display: block;
+        margin: 10px 0;
+    }
 }
 </style>
 </head>
@@ -48,18 +90,35 @@ h2 {
 </div>
 
 <div class="container">
-    <h2>Início</h2>
-    <label><input type="radio" name="opcao"> Opção 1</label><br>
-    <label><input type="radio" name="opcao"> Opção 2</label>
 
-    <h2>Flora</h2>
-    <label><input type="checkbox"> Planta 1</label><br>
-    <label><input type="checkbox"> Planta 2</label>
+    <!-- Seção Início -->
+    <div class="section">
+        <h2>Início</h2>
+        <label><input type="radio" name="inicio"> Opção 1</label>
+        <label><input type="radio" name="inicio"> Opção 2</label>
+    </div>
 
-    <h2>Fauna</h2>
-    <label><input type="checkbox"> Animal 1</label><br>
-    <label><input type="checkbox"> Animal 2</label>
+    <!-- Seção Flora -->
+    <div class="section">
+        <h2>Flora</h2>
+        <label><input type="checkbox"> Mangue-vermelho</label>
+        <label><input type="checkbox"> Mangue-branco</label>
+        <label><input type="checkbox"> Mangue-preto</label>
+    </div>
+
+    <!-- Seção Fauna -->
+    <div class="section">
+        <h2>Fauna</h2>
+        <label><input type="checkbox"> Beija-Flor</label>
+        <label><input type="checkbox"> Gaivota</label>
+        <label><input type="checkbox"> Garça</label>
+        <label><input type="checkbox"> Robalo-branco</label>
+        <label><input type="checkbox"> Jacaré</label>
+        <label><input type="checkbox"> Ostra-do-Pacífico</label>
+    </div>
+
 </div>
 
 </body>
 </html>
+
