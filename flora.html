@@ -2,89 +2,60 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Catálogo de Flora - Manguezais da Barra do Sahy</title>
+  <title>Flora - Manguezais da Barra do Sahy</title>
   <style>
-    /* Reset básico */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f9f4;
-      color: #333;
     }
-.
-    /* Menu centralizado sem pontos */
+
+    /* Menu */
     ul {
-      list-style: none; /* remove os pontos */
+      display: flex;
+      justify-content: center;
+      background-color: black;
       margin: 0;
       padding: 0;
-      background-color: #000; /* fundo preto */
-      display: flex;
-      justify-content: center; /* centraliza os itens */
     }
 
     ul li {
-      margin: 0;
+      display: inline-block;
     }
 
     ul li a {
       display: block;
+      padding: 14px 20px;
       color: white;
       text-decoration: none;
-      padding: 14px 20px;
     }
 
     ul li a:hover {
-      background-color: #333; /* efeito hover */
+      background-color: #333;
     }
 
-    /* Título e subtítulo */
-    header {
-      padding: 20px;
+    /* Conteúdo */
+    h3 {
       text-align: center;
+      margin-top: 20px;
     }
 
-    header h2 {
-      margin-bottom: 5px;
+    p {
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: justify;
+      padding: 0 20px;
     }
 
-    header h3 {
-      margin-top: 0;
-      color: #555;
-      font-weight: normal;
+    div {
+      text-align: center;
+      margin: 20px 0;
     }
 
-    /* Estilo das plantas */
-    .planta {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 16px;
-      margin: 20px auto; /* centraliza horizontalmente */
-      max-width: 600px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .planta img {
-      max-width: 100%;
+    div img {
+      max-width: 90%;
       height: auto;
-      border-radius: 6px;
-    }
-
-    .planta h2 {
-      margin: 10px 0 5px;
-      color: #2e7d32;
-    }
-
-    .planta h3 {
-      margin: 0 0 10px;
-      font-style: italic;
-      color: #4caf50;
-    }
-
-    .planta p {
-      margin: 0;
-      color: #555;
+      margin: 10px;
     }
   </style>
 </head>
@@ -99,28 +70,16 @@
   </ul>
 
   <!-- Conteúdo principal -->
-  <header>
-    <h2>Manguezais da Barra do Sahy (Aracruz)</h2>
-    <h3>Flora</h3>
-    <p>
-      A flora dos manguezais da Barra do Sahy é composta principalmente por espécies adaptadas à vida em ambientes salinos, conhecidas como halófitas. As árvores mais comuns incluem o mangue-vermelho (Rhizophora mangle), o mangue-preto (Avicennia schaueriana) e o mangue-branco (Laguncularia racemosa). Além dessas árvores, é comum encontrar epífitas como orquídeas, bromélias e samambaias sobre os galhos, além de algas marinhas na região.
-    </p>
-  </header>
+  <h3>Flora dos Manguezais da Barra do Sahy</h3>
 
-  <!-- Plantas -->
-  <div class="planta">
-    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ7KwtDnmfg7p8wV7vPtJdFmIvIb5ayDtJlxJLMpLZulxDAayMrNqKo7h_9HO38EyMAIM5o_NBAWNkiM2O3VgD1g" alt="Mangue-preto">
-    <h2>Mangue-preto</h2>
-    <h3>Avicennia schaueriana</h3>
-    <p>Apresenta raízes aéreas (pneumatóforos) que emergem do solo para facilitar a troca gasosa.</p>
+  <p>
+    A flora dos manguezais é composta por espécies adaptadas à salinidade e à variação de marés. Entre as mais comuns estão o mangue-vermelho (<i>Rhizophora mangle</i>), o mangue-branco (<i>Laguncularia racemosa</i>) e o mangue-preto (<i>Avicennia schaueriana</i>). Essas plantas possuem raízes especializadas que ajudam a fixar o solo e proteger a linha costeira da erosão.
+  </p>
+
+  <div>
+    <img src="https://www.infoescola.com/wp-content/uploads/2010/05/mangue-vermelho_564664322.jpg" alt="Mangue-vermelho">
+    <img src="https://i0.wp.com/www.wildlifephototours.com.br/wp-content/uploads/2020/09/mangue-branco.jpg" alt="Mangue-branco">
   </div>
 
-  <div class="planta">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Rhizophora_mangle.jpg" alt="Mangue-vermelho">
-    <h2>Mangue-vermelho</h2>
-    <h3>Rhizophora mangle</h3>
-    <p>Reconhecido por suas raízes aéreas (pneumatóforos) que auxiliam na respiração e fixação em solos instáveis, além de mecanismos para eliminação de sais.</p>
-  </div>
-
-  <div class="planta">
-    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXY5-L66Ll8CTLVrii---iTb5BzVkW_z0GVzTBXs3Fi07moPsYwfG6PFSAXlGDO60Qm7ByKsx3QVnpPXS1BZZqJg" alt="_
+</body>
+</html>
