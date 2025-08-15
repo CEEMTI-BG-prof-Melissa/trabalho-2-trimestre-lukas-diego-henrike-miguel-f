@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Questionário - Manguezais da Barra do Sahy</title>
 <style>
@@ -13,11 +13,11 @@ body {
     color: #333;
 }
 
-/* Menu de navegação */
+/* Menu de navegação preto igual Flora e Fauna */
 ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     background-color: #000;
     display: flex;
     justify-content: center;
@@ -31,28 +31,25 @@ ul li a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 14px 25px;
-    transition: 0.3s;
+    padding: 14px 20px;
 }
 
 ul li a:hover {
-    background-color: #1abc9c;
+    background-color: #111; /* discreto, igual Flora e Fauna */
 }
 
 /* Cabeçalho */
 header {
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px;
 }
 
 header h2 {
-    margin: 0;
-    color: #1abc9c;
-    font-size: 2.2em;
+    margin: 0 0 5px 0;
 }
 
 header h3 {
-    margin: 10px 0 20px 0;
+    margin: 0 0 20px 0;
     color: #555;
     font-weight: normal;
 }
@@ -61,58 +58,36 @@ header h3 {
 .card {
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 8px;
+    padding: 16px;
     margin: 20px auto;
-    max-width: 700px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .card h3 {
-    color: #1abc9c;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 label {
     display: block;
-    background-color: #f0f0f0;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-label:hover {
-    background-color: #e0e0e0;
+    margin-bottom: 8px;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-    margin-right: 10px;
-    accent-color: #1abc9c;
+    margin-right: 8px;
 }
 
 button {
-    background-color: #1abc9c;
-    color: #fff;
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 20px;
     border: none;
-    padding: 12px 25px;
-    border-radius: 8px;
+    border-radius: 6px;
+    background-color: #000;
+    color: #fff;
     cursor: pointer;
-    font-size: 1em;
-    margin-top: 15px;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #16a085;
-}
-
-@media(max-width: 600px){
-    header h2 {
-        font-size: 1.8em;
-    }
 }
 </style>
 </head>
@@ -156,9 +131,10 @@ button:hover {
     <label><input type="checkbox"> Ostra-do-Pacífico (<i>Magallana gigas</i>)</label>
 </div>
 
-<div class="card" style="text-align:center;">
+<div class="card">
     <button>Enviar respostas</button>
 </div>
 
 </body>
 </html>
+
