@@ -8,6 +8,8 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
     }
 
     /* Menu */
@@ -17,10 +19,11 @@
       background-color: black;
       margin: 0;
       padding: 0;
+      list-style: none;
     }
 
     ul li {
-      display: inline-block;
+      margin: 0;
     }
 
     ul li a {
@@ -34,28 +37,56 @@
       background-color: #333;
     }
 
-    /* Conteúdo */
-    h3 {
+    /* Cabeçalho */
+    header {
       text-align: center;
-      margin-top: 20px;
+      padding: 20px;
     }
 
-    p {
-      max-width: 800px;
+    header h2 {
+      margin-bottom: 5px;
+    }
+
+    header h3 {
+      margin-top: 0;
+      color: #555;
+      font-weight: normal;
+    }
+
+    /* Cards de plantas */
+    .planta {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
       margin: 20px auto;
-      text-align: justify;
-      padding: 0 20px;
-    }
-
-    div {
+      max-width: 600px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       text-align: center;
-      margin: 20px 0;
     }
 
-    div img {
-      max-width: 90%;
+    .planta img {
+      max-width: 100%;
       height: auto;
-      margin: 10px;
+      border-radius: 6px;
+    }
+
+    .nome-comum {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .nome-cientifico {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .descricao {
+      color: #555;
+      margin-top: 10px;
+      text-align: justify;
     }
   </style>
 </head>
@@ -69,16 +100,43 @@
     <li><a href="questionario.html">Questionário</a></li>
   </ul>
 
-  <!-- Conteúdo principal -->
-  <h3>Flora dos Manguezais da Barra do Sahy</h3>
+  <!-- Cabeçalho -->
+  <header>
+    <h2>Manguezais da Barra do Sahy (Aracruz)</h2>
+    <h3>Flora</h3>
+    <p>
+      A flora dos manguezais é composta por espécies adaptadas à salinidade e à variação de marés. Entre as mais comuns estão o mangue-vermelho, o mangue-branco e o mangue-preto. Essas plantas possuem raízes especializadas que ajudam a fixar o solo e proteger a linha costeira da erosão.
+    </p>
+  </header>
 
-  <p>
-    A flora dos manguezais é composta por espécies adaptadas à salinidade e à variação de marés. Entre as mais comuns estão o mangue-vermelho (<i>Rhizophora mangle</i>), o mangue-branco (<i>Laguncularia racemosa</i>) e o mangue-preto (<i>Avicennia schaueriana</i>). Essas plantas possuem raízes especializadas que ajudam a fixar o solo e proteger a linha costeira da erosão.
-  </p>
+  <!-- Mangue-vermelho -->
+  <div class="planta">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSenw2kdjS__n5V7AovDU3hYe8F-dcPBGs2Zw&s" alt="Mangue-vermelho">
+    <div class="nome-comum">Nome comum: Mangue-vermelho</div>
+    <div class="nome-cientifico">Nome científico: Rhizophora mangle</div>
+    <div class="descricao">
+      O mangue-vermelho possui raízes aéreas chamadas raízes-zancudas, que ajudam a sustentar a planta em solos instáveis e alagadiços. É uma espécie fundamental para a proteção da costa contra erosão e fornece abrigo para diversas espécies aquáticas.
+    </div>
+  </div>
 
-  <div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Rhizophora_mangle.jpg">
-    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXY5-L66Ll8CTLVrii---iTb5BzVkW_z0GVzTBXs3Fi07moPsYwfG6PFSAXlGDO60Qm7ByKsx3QVnpPXS1BZZqJg">
+  <!-- Mangue-branco -->
+  <div class="planta">
+    <img src="https://www.ruraltectv.com.br/wp-content/uploads/2024/03/MANGUE-BRANCO-Laguncularia-racemosa-3.2.jpg" alt="Mangue-branco">
+    <div class="nome-comum">Nome comum: Mangue-branco</div>
+    <div class="nome-cientifico">Nome científico: Laguncularia racemosa</div>
+    <div class="descricao">
+      O mangue-branco apresenta folhas verdes e raízes tabulares que ajudam na estabilização do solo. Essa espécie também contribui para a purificação da água e serve como habitat para peixes e crustáceos.
+    </div>
+  </div>
+
+  <!-- Mangue-preto -->
+  <div class="planta">
+    <img src="https://igui-ecologia.s3.amazonaws.com/wp-content/uploads/2016/06/Mangue.jpg">
+    <div class="nome-comum">Nome comum: Mangue-preto</div>
+    <div class="nome-cientifico">Nome científico: Avicennia schaueriana</div>
+    <div class="descricao">
+      O mangue-preto é caracterizado por suas raízes respiratórias chamadas pneumatóforos, que permitem a troca gasosa mesmo em solos alagadiços. Contribui para a proteção costeira e é importante para a biodiversidade local.
+    </div>
   </div>
 
 </body>
