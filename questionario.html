@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questionário</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.container {
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="menu">
+    <a href="#">Início</a>
+    <a href="#">Fauna</a>
+    <a href="#">Flora</a>
+    <a href="#">Questionário</a>
+</div>
+
+<div class="container">
+    <h2>Início</h2>
+    <label><input type="radio" name="opcao"> Opção 1</label><br>
+    <label><input type="radio" name="opcao"> Opção 2</label>
+
+    <h2>Flora</h2>
+    <label><input type="checkbox"> Planta 1</label><br>
+    <label><input type="checkbox"> Planta 2</label>
+
+    <h2>Fauna</h2>
+    <label><input type="checkbox"> Animal 1</label><br>
+    <label><input type="checkbox"> Animal 2</label>
+</div>
+
+</body>
+</html>

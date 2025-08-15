@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Catálogo de Fauna - Manguezais da Barra do Sahy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+    }
+
+    ul li {
+      margin: 0;
+    }
+
+    ul li a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+    }
+
+    ul li a:hover {
+      background-color: #333;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h2 {
+      margin-bottom: 5px;
+    }
+
+    header h3 {
+      margin-top: 0;
+      color: #555;
+      font-weight: normal;
+    }
+
+    .animal {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .animal img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .nome-comum {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .nome-cientifico {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .descricao {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="fauna.html">Fauna</a></li>
+    <li><a href="flora.html">Flora</a></li>
+    <li><a href="questionario.html">Questionário</a></li>
+  </ul>
+
+  <header>
+    <h2>Manguezais da Barra do Sahy (Aracruz)</h2>
+    <h3>Fauna</h3>
+    <p>
+      A fauna dos manguezais da Barra do Sahy é rica e diversificada, incluindo moluscos, crustáceos (como caranguejos e camarões), peixes, aves (como garças, gaivotas e beija-flores), e até mesmo jacarés em algumas áreas. Os manguezais atuam como berçário e abrigo para muitas espécies, além de fornecerem alimento.
+    </p>
+  </header>
+
+  <!-- Beija-Flor -->
+  <div class="animal">
+    <img width="350px" src="data:image/jpeg;base64,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"/>
+    <div class="nome-comum">Nome comum: Beija-Flor</div>
+    <div class="nome-cientifico">Nome científico: Trochilidae</div>
+    <div class="comprimento">Comprimento: 10 cm</div>
+    <div class="velocidade">Velocidade: 98 km/h</div>
+    <div class="numero-de-ovos">Número de Ovos: 2 – 3 por ninho</div>
+    <div class="peso">Peso: 4 – 4,5 g</div>
+    <div class="descricao">
+      Os beija-flores, também denominados colibris, são termos comuns que se referem a qualquer uma das 362 espécies classificadas dentro de 113 gêneros reconhecidos, distribuídos do sul do Alasca ao extremo sul da Patagônia.
+    </div>
+  </div>
+
+  <!-- Gaivota -->
+  <div class="animal">
+    <img width="350px" src="https://cdn.pixabay.com/photo/2017/08/30/01/10/seagull-2692250_960_720.jpg"/>
+    <div class="nome-comum">Nome comum: Gaivota</div>
+    <div class="nome-cientifico">Nome científico: Larinae</div>
+    <div class="comprimento">Comprimento: Alcatraz-comum: 64–79 cm, Gaivota-pequena: 25–30 cm</div>
+    <div class="largura-das-asas">Largura das Asas: Alcatraz-comum: 1,5–1,7 m, Gaivota-pequena: 61–78 cm</div>
+    <div class="numero-de-ovos">Número de Ovos: Alcatraz-comum: 1–3, Gaivota-pequena: 2–6, Gaivota-do-rabo-de-andorinha: 1</div>
+    <div class="peso">Peso: Alcatraz-comum: 1,8 kg, Gaivota-pequena: 68–160 g</div>
+    <div class="descricao">
+      As gaivotas são aves marinhas da família dos Larídeos e sub-ordem Lari. A maior parte das gaivotas pertence ao gênero Larus.
+    </div>
+  </div>
+
+  <!-- Garça -->
+  <div class="animal">
+    <img width="350px" src="https://cdn.pixabay.com/photo/2014/04/03/11/50/egret-312385_960_720.jpg"/>
+    <div class="nome-comum">Nome comum: Garça</div>
+    <div class="nome-cientifico">Nome científico: Ardeidae</div>
+    <div class="comprimento">Comprimento: 84–100 cm</div>
+    <div class="largura-das-asas">Largura das Asas: 1,6–2 m</div>
+    <div class="numero-de-ovos">Número de Ovos: Garça-gigante: 2–5, Garça-pequena: 4–8</div>
+    <div class="peso">Peso: 1–2,1 kg</div>
+    <div class="descricao">
+      Ardeidae é a família de aves pelecaniformes que inclui os socós e as garças. Vivem em bandos e se alimentam de peixes, sapos e outros animais aquáticos.
+    </div>
+  </div>
+
+  <!-- Robalo-branco -->
+  <div class="animal">
+    <img width="350px" src="https://cdn.pixabay.com/photo/2018/03/30/19/13/fish-3279081_960_720.jpg"/>
+    <div class="nome-comum">Nome comum: Robalo-branco</div>
+    <div class="nome-cientifico">Nome científico: Centropomus undecimalis</div>
+    <div class="comprimento">Comprimento: 1,2 m</div>
+    <div class="numero-de-ovos">Número de Ovos: 1,5–2 milhões por temporada de desova</div>
+    <div class="descricao">
+      O Robalo-branco é um peixe encontrado em manguezais e áreas costeiras. Alimenta-se de peixes menores e crustáceos.
+    </div>
+  </div>
+
+  <!-- Jacaré -->
+  <div class="animal">
+    <img width="350px" src="https://cdn.pixabay.com/photo/2016/11/29/04/16/alligator-1867345_960_720.jpg"/>
+    <div class="nome-comum">Nome comum: Jacaré</div>
+    <div class="nome-cientifico">Nome científico: Alligatoridae</div>
+    <div class="comprimento">Comprimento: até 4 m</div>
+    <div class="numero-de-ovos">Número de Ovos: 20–50 por ninhada</div>
+    <div class="peso">Peso: até 450 kg</div>
+    <div class="descricao">
+      Os jacarés são répteis encontrados em rios, lagoas e manguezais. Alimentam-se de peixes, aves e pequenos mamíferos.
+    </div>
+  </div>
+
+  <!-- Ostra-do-Pacífico -->
+  <div class="animal">
+    <img width="350px" src="https://cdn.pixabay.com/photo/2016/04/01/10/21/oyster-1300675_960_720.jpg"/>
+    <div class="nome-comum">Nome comum: Ostra-do-Pacífico</div>
+    <div class="nome-cientifico">Nome científico: Magallana gigas</div>
+    <div class="comprimento">Comprimento: 8–15 cm</div>
+    <div class="peso">Peso: 80–300 g</div>
+    <div class="descricao">
+      Cada fêmea pode liberar até 50 milhões de ovos por temporada reprodutiva. Pertence à classe Bivalvia, que inclui mexilhões, vieiras e outras ostras.
+    </div>
+  </div>
+
+</body>
+</html>
