@@ -13,7 +13,7 @@ body {
     color: #333;
 }
 
-/* Menu de navegação preto igual Flora e Fauna */
+/* Menu de navegação preto */
 ul {
     list-style: none;
     margin: 0;
@@ -35,7 +35,7 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: #111; /* discreto, igual Flora e Fauna */
+    background-color: #111;
 }
 
 /* Cabeçalho */
@@ -44,50 +44,60 @@ header {
     padding: 20px;
 }
 
-header h2 {
-    margin: 0 0 5px 0;
+header h1 {
+    margin: 0 0 10px 0;
 }
 
-header h3 {
-    margin: 0 0 20px 0;
+header p {
     color: #555;
-    font-weight: normal;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-/* Cards de perguntas */
+/* Card do formulário */
 .card {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 16px;
+    padding: 20px;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 700px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.card h3 {
-    margin-bottom: 10px;
-}
-
-label {
+.card label {
     display: block;
-    margin-bottom: 8px;
+    margin: 10px 0 5px 0;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+.card input, 
+.card select, 
+.card textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.card input[type="checkbox"],
+.card input[type="radio"] {
+    width: auto;
     margin-right: 8px;
 }
 
-button {
-    display: block;
-    margin: 20px auto 0 auto;
+.card button {
     padding: 10px 20px;
+    margin: 10px 10px 0 0;
     border: none;
     border-radius: 6px;
     background-color: #000;
     color: #fff;
     cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #111;
 }
 </style>
 </head>
@@ -103,38 +113,87 @@ button {
 
 <!-- Cabeçalho -->
 <header>
-    <h2>Questionário sobre Manguezais</h2>
-    <h3>Teste seus conhecimentos sobre fauna e flora</h3>
+    <h1>Questionário sobre Cultura Oceânica</h1>
+    <p>Este formulário tem como objetivo coletar informações sobre o conhecimento e a relação das pessoas com a cultura oceânica, práticas sustentáveis e preservação dos oceanos.</p>
 </header>
 
-<!-- Perguntas -->
+<!-- Formulário -->
 <div class="card">
-    <h3>Início</h3>
-    <label><input type="radio" name="inicio"> Opção 1</label>
-    <label><input type="radio" name="inicio"> Opção 2</label>
-</div>
+<form action="#" method="post">
 
-<div class="card">
-    <h3>Flora</h3>
-    <label><input type="checkbox"> Mangue-vermelho (<i>Rhizophora mangle</i>)</label>
-    <label><input type="checkbox"> Mangue-branco (<i>Laguncularia racemosa</i>)</label>
-    <label><input type="checkbox"> Mangue-preto (<i>Avicennia schaueriana</i>)</label>
-</div>
+    <!-- Campos obrigatórios -->
+    <label for="nome">Nome completo *</label>
+    <input type="text" id="nome" name="nome" minlength="10" maxlength="100" required>
 
-<div class="card">
-    <h3>Fauna</h3>
-    <label><input type="checkbox"> Beija-Flor (<i>Clytolaema rubricauda</i>)</label>
-    <label><input type="checkbox"> Gaivota (<i>Larus spp.</i>)</label>
-    <label><input type="checkbox"> Garça (<i>Ardeidae</i>)</label>
-    <label><input type="checkbox"> Robalo-branco (<i>Centropomus undecimalis</i>)</label>
-    <label><input type="checkbox"> Jacaré (<i>Melanosuchus niger</i>)</label>
-    <label><input type="checkbox"> Ostra-do-Pacífico (<i>Magallana gigas</i>)</label>
-</div>
+    <label for="email">E-mail *</label>
+    <input type="email" id="email" name="email" required>
 
-<div class="card">
-    <button>Enviar respostas</button>
+    <label for="idade">Idade *</label>
+    <input type="number" id="idade" name="idade" min="5" max="125" required>
+
+    <label for="nascimento">Data de Nascimento *</label>
+    <input type="date" id="nascimento" name="nascimento" min="1901-02-02" max="2025-11-30" required>
+
+    <label for="estado">Estado onde reside *</label>
+    <select id="estado" name="estado" required>
+        <option value="">Selecione</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+    </select>
+
+    <label>Você já ouviu falar sobre Cultura Oceânica? *</label>
+    <label><input type="radio" name="cultura_oceanica" value="sim" required> Sim</label>
+    <label><input type="radio" name="cultura_oceanica" value="nao" required> Não</label>
+
+    <label for="relacao_mar">Qual sua relação com o mar? *</label>
+    <textarea id="relacao_mar" name="relacao_mar" rows="5" cols="50" required></textarea>
+
+    <label>Quais dessas ações você já praticou? *</label>
+    <label><input type="checkbox" name="acoes" value="reutilizei_plasticos"> Reutilizei plásticos e embalagens para reduzir o lixo</label>
+    <label><input type="checkbox" name="acoes" value="evitei_lixo"> Evitei descartar lixo em praias, rios ou mares</label>
+    <label><input type="checkbox" name="acoes" value="sacolas_reutilizaveis"> Usei sacolas reutilizáveis ao fazer compras</label>
+    <label><input type="checkbox" name="acoes" value="campanhas"> Participei de campanhas de conscientização sobre a vida marinha</label>
+    <label><input type="checkbox" name="acoes" value="meios_transporte"> Optei por meios de transporte menos poluentes</label>
+    <label><input type="checkbox" name="acoes" value="economizei_agua"> Economizei água no dia a dia</label>
+    <label><input type="checkbox" name="acoes" value="compartilhei_informacoes"> Compartilhei informações sobre a proteção dos oceanos nas redes sociais</label>
+    <label><input type="checkbox" name="acoes" value="denunciei"> Denunciei ou evitei práticas prejudiciais ao meio ambiente marinho</label>
+    <label><input type="checkbox" name="acoes" value="apoiei_projetos"> Apoiei projetos ou ONGs ligadas à conservação marinha</label>
+
+    <!-- Campo opcional -->
+    <label for="sugestao">Enviar uma sugestão de iniciativa oceânica (opcional)</label>
+    <textarea id="sugestao" name="sugestao" rows="5" cols="50"></textarea>
+
+    <!-- Botões -->
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+
+</form>
 </div>
 
 </body>
 </html>
-
