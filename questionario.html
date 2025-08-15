@@ -1,111 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Questionário - Manguezais da Barra do Sahy</title>
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questionário</title>
+<style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
     }
 
-    /* Menu */
-    ul {
-      display: flex;
-      justify-content: center;
-      background-color: black;
-      margin: 0;
-      padding: 0;
+    .container {
+        max-width: 800px;
+        margin: 30px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    ul li {
-      display: inline-block;
+    h1 {
+        text-align: center;
+        color: #333;
     }
 
-    ul li a {
-      display: block;
-      padding: 14px 20px;
-      color: white;
-      text-decoration: none;
-    }
-
-    ul li a:hover {
-      background-color: #333;
-    }
-
-    /* Conteúdo */
-    h3 {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    form {
-      max-width: 600px;
-      margin: 20px auto;
-      padding: 0 20px;
+    p {
+        text-align: center;
+        color: #555;
     }
 
     label {
-      display: block;
-      margin: 10px 0 5px;
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
     }
 
-    input[type="text"], select {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 15px;
-      box-sizing: border-box;
+    input, select, textarea, button {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
     }
 
-    input[type="submit"] {
-      background-color: black;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      cursor: pointer;
+    textarea {
+        resize: none;
     }
 
-    input[type="submit"]:hover {
-      background-color: #333;
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
     }
-  </style>
+
+    button {
+        background-color: #0077cc;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #005fa3;
+    }
+</style>
 </head>
 <body>
 
-  <!-- Menu de navegação -->
-  <ul>
-    <li><a href="index.html">Início</a></li>
-    <li><a href="fauna.html">Fauna</a></li>
-    <li><a href="flora.html">Flora</a></li>
-    <li><a href="questionario.html">Questionário</a></li>
-  </ul>
+<div class="container">
+    <h1>Pesquisa sobre Cultura Oceânica</h1>
+    <p>Por favor, preencha o formulário abaixo. Sua contribuição é muito importante para nossa pesquisa!</p>
 
-  <!-- Conteúdo principal -->
-  <h3>Questionário sobre os Manguezais</h3>
+    <form action="#" method="post">
+        
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" minlength="10" maxlength="100" required>
 
-  <form action="#" method="post">
-    <label for="nome">Seu nome:</label>
-    <input type="text" id="nome" name="nome" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
 
-    <label for="pergunta1">1. Qual a importância dos manguezais?</label>
-    <input type="text" id="pergunta1" name="pergunta1" required>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="5" max="125" required>
 
-    <label for="pergunta2">2. Cite uma espécie de planta encontrada nos manguezais.</label>
-    <input type="text" id="pergunta2" name="pergunta2" required>
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" min="1901-02-02" max="2025-11-30" required>
 
-    <label for="pergunta3">3. Cite uma espécie de animal encontrada nos manguezais.</label>
-    <input type="text" id="pergunta3" name="pergunta3" required>
+        <label for="estado">Estado onde reside:</label>
+        <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option>AC</option><option>AL</option><option>AP</option><option>AM</option>
+            <option>BA</option><option>CE</option><option>DF</option><option>ES</option>
+            <option>GO</option><option>MA</option><option>MT</option><option>MS</option>
+            <option>MG</option><option>PA</option><option>PB</option><option>PR</option>
+            <option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+            <option>RS</option><option>RO</option><option>RR</option><option>SC</option>
+            <option>SP</option><option>SE</option><option>TO</option>
+        </select>
 
-    <label for="pergunta4">4. Os manguezais ajudam a proteger a linha costeira?</label>
-    <select id="pergunta4" name="pergunta4" required>
-      <option value="">Selecione</option>
-      <option value="sim">Sim</option>
-      <option value="nao">Não</option>
-    </select>
+        <label>Você já ouviu falar sobre Cultura Oceânica?</label>
+        <input type="radio" name="cultura" value="Sim" required> Sim
+        <input type="radio" name="cultura" value="Não" required> Não
 
-    <input type="submit" value="Enviar">
-  </form>
+        <label for="relacao">Qual sua relação com o mar?</label>
+        <textarea id="relacao" name="relacao" rows="5" cols="50" required></textarea>
 
-</body>
-</html>
+        <label>Quais dessas ações você já praticou?</label>
+        <input type="checkbox" name="acoes" value="Reutilizei"> Reutilizei plásticos e embalagens<br>
+        <input type="checkbox" name="acoes" value="EviteiDescartar"> Evitei descartar lixo em praias, rios ou mares<br>
+        <input type="checkbox" name="acoes" value="Sacolas"> Usei sacolas reutilizáveis<br>
+        <input type="checkbox" name="acoes" value="Campanhas"> Participei de campanhas de conscientização<br>
+        <input type="checkbox" name="acoes" value="Transporte"> Optei por meios de transporte menos poluentes<br>
+        <input type="
