@@ -2,117 +2,74 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Questionário</title>
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f2f2f2;
-    }
-
-    .container {
-        max-width: 800px;
-        margin: 30px auto;
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-        text-align: center;
-        color: #333;
-    }
-
-    p {
-        text-align: center;
-        color: #555;
-    }
-
-    label {
-        display: block;
-        margin-top: 15px;
-        font-weight: bold;
-    }
-
-    input, select, textarea, button {
-        width: 100%;
-        padding: 8px;
-        margin-top: 5px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-    }
-
-    textarea {
-        resize: none;
-    }
-
-    .button-group {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-    }
-
-    button {
-        background-color: #0077cc;
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        border-radius: 5px;
-    }
-
-    button:hover {
-        background-color: #005fa3;
-    }
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    background-color: #000;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+form {
+    margin: 20px;
+}
+h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+button {
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: gray;
+}
 </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Pesquisa sobre Cultura Oceânica</h1>
-    <p>Por favor, preencha o formulário abaixo. Sua contribuição é muito importante para nossa pesquisa!</p>
+<ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="fauna.html">Fauna</a></li>
+    <li><a href="flora.html">Flora</a></li>
+    <li><a href="questionario.html">Questionário</a></li>
+</ul>
 
-    <form action="#" method="post">
-        
-        <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" minlength="10" maxlength="100" required>
+<form>
+    <h2>Início</h2>
+    <label><input type="radio" name="inicio" value="op1"> Opção 1</label><br>
+    <label><input type="radio" name="inicio" value="op2"> Opção 2</label><br><br>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+    <h2>Flora</h2>
+    <label><input type="checkbox" name="flora" value="planta1"> Planta 1</label><br>
+    <label><input type="checkbox" name="flora" value="planta2"> Planta 2</label><br><br>
 
-        <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade" min="5" max="125" required>
+    <h2>Fauna</h2>
+    <label><input type="checkbox" name="fauna" value="animal1"> Animal 1</label><br>
+    <label><input type="checkbox" name="fauna" value="animal2"> Animal 2</label><br><br>
 
-        <label for="nascimento">Data de Nascimento:</label>
-        <input type="date" id="nascimento" name="nascimento" min="1901-02-02" max="2025-11-30" required>
+    <button type="submit">Enviar</button>
+</form>
 
-        <label for="estado">Estado onde reside:</label>
-        <select id="estado" name="estado" required>
-            <option value="">Selecione</option>
-            <option>AC</option><option>AL</option><option>AP</option><option>AM</option>
-            <option>BA</option><option>CE</option><option>DF</option><option>ES</option>
-            <option>GO</option><option>MA</option><option>MT</option><option>MS</option>
-            <option>MG</option><option>PA</option><option>PB</option><option>PR</option>
-            <option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
-            <option>RS</option><option>RO</option><option>RR</option><option>SC</option>
-            <option>SP</option><option>SE</option><option>TO</option>
-        </select>
+</body>
+</html>
 
-        <label>Você já ouviu falar sobre Cultura Oceânica?</label>
-        <input type="radio" name="cultura" value="Sim" required> Sim
-        <input type="radio" name="cultura" value="Não" required> Não
-
-        <label for="relacao">Qual sua relação com o mar?</label>
-        <textarea id="relacao" name="relacao" rows="5" cols="50" required></textarea>
-
-        <label>Quais dessas ações você já praticou?</label>
-        <input type="checkbox" name="acoes" value="Reutilizei"> Reutilizei plásticos e embalagens<br>
-        <input type="checkbox" name="acoes" value="EviteiDescartar"> Evitei descartar lixo em praias, rios ou mares<br>
-        <input type="checkbox" name="acoes" value="Sacolas"> Usei sacolas reutilizáveis<br>
-        <input type="checkbox" name="acoes" value="Campanhas"> Participei de campanhas de conscientização<br>
-        <input type="checkbox" name="acoes" value="Transporte"> Optei por meios de transporte menos poluentes<br>
-        <input type="
